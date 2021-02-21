@@ -11,7 +11,7 @@ package alumno;
  */
 public class Alumno {
     private String nombre, apellido;
-    int edad;
+    int edad, id;
 
     public String getNombre() {
         return nombre;
@@ -37,9 +37,16 @@ public class Alumno {
         this.edad = edad;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
-        return "Alumno{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + '}';
+        return "Alumno{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", id=" + id + '}';
     }
-    
 }
